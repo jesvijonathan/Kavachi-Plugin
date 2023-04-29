@@ -1,0 +1,195 @@
+<!-- chrome plugin popup -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <div class="title">
+        <h1 class="title_tog">
+          Kavachi Plugin <img class="logo" src="./icons/icon32.png" />
+        </h1>
+      </div>
+      <div>
+        <div class="options_cont">
+          <div class="options_cont_interior_main">
+            <label for="toggle1">Turn On Protection</label>
+            <label class="switch" for="toggle1">
+              <div>
+                <input type="checkbox" id="toggle1" name="toggle1" checked />
+                <span class="slider round"></span>
+              </div>
+            </label>
+          </div>
+
+          <br />
+          <div class="options">
+            <div style="margin-bottom: 16px">Kavachi Options :</div>
+            <div class="options_cont_interior">
+              <input type="checkbox" id="toggle2" name="toggle2" checked />
+              <label for="toggle2">Replace content</label>
+            </div>
+            <div class="options_cont_interior">
+              <input type="checkbox" id="toggle3" name="toggle3" checked />
+              <label for="toggle3">Video/Image filtering</label>
+            </div>
+            <div class="options_cont_interior">
+              <input type="checkbox" id="toggle3" name="toggle3" />
+              <label for="toggle3">Audio filtering</label>
+            </div>
+
+            <div class="options_cont_interior">
+              <input type="checkbox" id="toggle3" name="toggle3" />
+              <label for="toggle3">Context filtering</label>
+            </div>
+            <div class="options_cont_interior">
+              <input type="checkbox" id="toggle3" name="toggle3" checked />
+              <label for="toggle3">Detect on all website</label>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div>Contact developer</div>
+            <div>Visit website</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .footer_con2 {
+    margin: 4vw;
+  }
+  .footer_con {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 4vw;
+  }
+  .opt {
+    width: fit-content;
+  }
+  svg:hover g path {
+    fill: #a3a3a3;
+
+    box-shadow: 3px 3px 10px 0px #ffffff;
+  }
+  .footer {
+    margin: 20px 0px 12px 0px;
+    /* background-color: rgba(127, 255, 212, 0.153); */
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 3px;
+  }
+  .options {
+    margin: 7px 26px;
+  }
+  .options_cont_interior_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px;
+  }
+  .options_cont_interior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+  }
+  body {
+    background-color: black;
+    color: white;
+    width: 240px;
+  }
+  .logo {
+    float: right;
+    width: 50px;
+    height: 50px;
+  }
+  .title_tog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #3b3b3b;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3b3b3b;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>

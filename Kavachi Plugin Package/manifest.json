@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Kavachi Plugin",
+  "version": "0.4.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "description": "A plugin to deal with obscene content on the internet",
+  "icons": {
+    "32": "/icons/icon32.png"
+  },
+
+  "author": "jesvi22j@gmail.com",
+  "devtools_page": "devtools.html",
+  "homepage_url": "https://path/to/homepage",
+  "options_page": "./options.html",
+  "short_name": "Kavachi",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ]
+}
